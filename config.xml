@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.makruvatech.lenny" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Penilaian</name>
+<widget id="com.promozzing.rizal" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Pneumatik</name>
     <description>
-        Aplikasi penilaian K13
+        Media Pembelajaran Pneumatik
     </description>
-    <author email="info@makruvatech.com" href="http://makruvatech.com">
-        Makruvatech
+    <author email="arifbudiarto.1212@gmail.com" href="http://github.com/carakatama">
+        Arif Budiarto
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
@@ -24,23 +24,13 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <plugin name="cordova-plugin-splashscreen" source="npm" />
-    <plugin name="cordova-plugin-file" source="npm" />
-	<feature name="File">
-		<param name="android-package" value="org.apache.cordova.file.FileUtils" />
-	</feature>
-    <plugin name="cordova-plugin-file-transfer" source="npm" />
-	<feature name="FileTransfer">
-		<param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
-	</feature>
-	<preference name="AndroidPersistentFileLocation" value="Internal" />
-	<preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
     <icon src="img/icon.png" />
-	<splash src="res/screen/android/splash-port-hdpi.png" />
-	<splash src="res/screen/android/splash-port-ldpi.png" platform="android" qualifier="ldpi" />
-	<splash src="res/screen/android/splash-port-mdpi.png" platform="android" qualifier="mdpi" />
-	<splash src="res/screen/android/splash-port-hdpi.png" platform="android" qualifier="hdpi" />
-	<splash src="res/screen/android/splash-port-xhdpi.png" platform="android" qualifier="xhdpi" />
-	<preference name="AutoHideSplashScreen" value="true" />
+    <splash src="res/screen/android/splash-port-hdpi.png" />
+    <splash platform="android" qualifier="ldpi" src="res/screen/android/splash-port-ldpi.png" />
+    <splash platform="android" qualifier="mdpi" src="res/screen/android/splash-port-mdpi.png" />
+    <splash platform="android" qualifier="hdpi" src="res/screen/android/splash-port-hdpi.png" />
+    <splash platform="android" qualifier="xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
+    <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashScreenDelay" value="5000" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
@@ -53,5 +43,4 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
-	<platform name="winphone" />
 </widget>
